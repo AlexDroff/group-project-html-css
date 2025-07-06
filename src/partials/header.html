@@ -1,19 +1,109 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container wrap-header">
+    <nav class="center-nav">
+      <a class="header-logo" href="./index.html">
+        <img src="/img/logo_header.svg" alt="логотип" />
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+      <ul class="header-nav">
+        <li class="header-nav-item">
+          <a class="nav-item-link" href="#about">Про нас</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header-nav-item">
+          <a class="nav-item-link" href="#advantages">Переваги</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="nav-item-link" href="#assortment">Асортимент</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="nav-item-link" href="#gallery">Галерея</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="nav-item-link" href="#feedbacks">Відгуки</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="nav-item-link" href="#support">Контакти</a>
         </li>
       </ul>
     </nav>
+
+    <address class="address">
+      <ul class="header-address">
+        <li class="header-address-item">
+          <a class="address-item-link" href="mailto:hello@ecotote.com"
+            >hello@ecotote.com</a
+          >
+        </li>
+        <li class="header-address-item">
+          <a class="address-item-link" href="tel:+380999091122"
+            >+38 (099) 909 11 22</a
+          >
+        </li>
+      </ul>
+    </address>
+
+    <button data-menu-open class="burger" type="button">
+      <svg class="burger-icon" width="32" height="32">
+        <use href="/img/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <!---------- mobal menu -->
+  <div class="mobal-menu-backdrop" data-menu>
+    <div class="container wrap-menu">
+      <nav class="mobal-nav">
+        <a class="header-logo menu-logo" href="./index.html">
+          <img src="/img/logo_header.svg" alt="логотип" />
+        </a>
+        <ul class="mobal-nav-list">
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#about">Про нас</a>
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#advantages"
+              >Переваги</a
+            >
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#assortment"
+              >Асортимент</a
+            >
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#gallery">Галерея</a>
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#feedbacks"
+              >Відгуки</a
+            >
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#support"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <address class="mobal-address">
+        <ul class="mobile-adress-list">
+          <li class="mobal-address-item">
+            <a class="address-item-link" href="mailto:hello@ecotote.com"
+              >hello@ecotote.com</a
+            >
+          </li>
+          <li class="mobal-address-item">
+            <a class="address-item-link" href="tel:+380999091122"
+              >+38 (099) 909 11 22</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <button data-menu-close class="button-menu button-close" type="button">
+        <svg class="btn-close-icon" width="32" height="32">
+          <use href="/img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
